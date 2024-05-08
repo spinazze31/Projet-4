@@ -65,12 +65,12 @@
     .btn {
         height: 3.13rem;
         border-radius: 1.56rem;
-        font-size: 1rem;
-        font-weight: 500; 
         background: linear-gradient(to top, #9356DC -11.44%, #FF79DA 123.93%);
         color: white;
         .btn__size {
             width: 13.63rem;
+            font-size: 1rem;
+            font-weight: 500;
         }
     }    
 
@@ -81,7 +81,7 @@
         font-weight: 700;
         font-size: 1.5rem;
         padding-left: 0.94rem;
-        .functioning__txt {
+        .functioning__title {
             padding-top: 2rem;
             margin-top: 0;
         }
@@ -118,6 +118,61 @@
     
     }
 
+    .restaurant {
+        display: flex;
+        flex-direction: column;
+        height: 71.88rem;
+        background-color: var(--main_color);
+        gap: 1.13rem;
+        .restaurant__title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            padding: 1.88rem 0rem 0rem 1.10rem;
+            margin-top: 0;
+        }
+    }
+    a {
+        text-decoration: none;
+    }
+    .restaurant__card {
+        width: 20.16rem;
+        height: 15.69rem;
+        border-radius: var(--border);
+        background-color: white;
+        margin-left: 1.10rem;
+        
+        object-fit: cover;
+        .restaurant__card--image {
+            width: 100%;
+            height: 70%;
+            border-radius: var(--border);
+        }
+        .restaurant__card--container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            color: black;
+            .restaurant__card--title {
+                display: flex;
+                font-size: 1.13rem;
+                font-weight: 700;
+                margin: 0.63rem 0rem 0.31rem 0.75rem;
+            }
+            .restaurant__card--logo {
+                width: 1.38rem;
+                height: 1.31rem;
+                padding: 0.80rem 1.80rem 0rem 0rem;
+            }
+        }
+        .restaurant__card--subtitle {
+            size: 1.06rem ;
+            font-weight: 300;
+            margin: 0.31rem 0rem 0.63rem 0.75rem;
+            color: black;
+        }
+    }
 
- 
+    
+
+
 }

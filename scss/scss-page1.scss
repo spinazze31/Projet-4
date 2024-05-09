@@ -1,0 +1,32 @@
+* {
+    font-family: Roboto;
+}
+
+:root {
+    --main_color: #F6F6F6;
+    --footer_background_color: #353535;
+    --underline_color:  #99E2D0; 
+    --title_font-family: Shrikhand;
+    --border: 0.94rem;
+}
+
+@media (max-width: 768px) {
+    
+    .logo {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 3.94rem;
+        .logo__size {
+            display: flex;
+            width: 12.31rem;
+            height: 2.25rem;
+            padding-left: 45px;
+        }
+
+        .return__logo {
+            display: flex;
+            padding-left: 20px;
+        }
+
+    }

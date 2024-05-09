@@ -183,7 +183,7 @@
         height: 11.63rem;
         gap: 1rem;
         background-color: var(--footer_background_color);
-        color: white;
+        line-height: 1.7rem;
         .footer__logo {
             width: 8.69rem;
             height: 1.69rem;
@@ -192,7 +192,6 @@
         .footer__link {
             display: flex;
             flex-direction: row;
-            line-height: 1.7rem;
             .footer__link--logo{
                 display: flex;
                 width: 0.69rem;
@@ -208,6 +207,13 @@
                 margin: 0;
 
             }
+        }
+        .footer__container--txt {
+            color: white;
+            padding-left: 1.10rem;
+            font-size: 1rem;
+            font-weight: 500;
+            margin: 0;
         }
     }
 

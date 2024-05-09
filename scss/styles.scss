@@ -121,7 +121,7 @@
     .restaurant {
         display: flex;
         flex-direction: column;
-        height: 71.88rem;
+        height: 76rem;
         background-color: var(--main_color);
         gap: 1.13rem;
         .restaurant__title {
@@ -179,6 +179,38 @@
     
     }
 
+    .footer__container {
+        height: 11.63rem;
+        gap: 1rem;
+        background-color: var(--footer_background_color);
+        color: white;
+        .footer__logo {
+            width: 8.69rem;
+            height: 1.69rem;
+            padding: 1.5rem 0rem 0rem 1.10rem;
+        }
+        .footer__link {
+            display: flex;
+            flex-direction: row;
+            line-height: 1.7rem;
+            .footer__link--logo{
+                display: flex;
+                width: 0.69rem;
+                height: 0.81rem;
+                padding: 0.4rem 0rem 0rem 1.10rem;
+            }
+            .footer__link--txt {
+                display: flex;
+                font-size: 1rem;
+                font-weight: 500;
+                color: white;
+                padding-left: 0.63rem;
+                margin: 0;
 
+            }
+        }
+    }
+
+    
 
 }

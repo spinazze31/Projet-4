@@ -21,12 +21,109 @@
             display: flex;
             width: 12.31rem;
             height: 2.25rem;
-            padding-left: 45px;
+            padding-left: 2.81rem;
         }
-
         .return__logo {
             display: flex;
-            padding-left: 20px;
+            padding-left: 1.25rem;
         }
 
     }
+
+    .header__img {
+        width: 100%;
+        height: 17.19rem;
+        position: relative;
+    }
+
+    .container__menu {
+        height: 81.69rem;
+        background: var(--main_color);
+        border-top-left-radius: 2.5rem;
+        border-top-right-radius: 2.5rem;
+        position: absolute;
+        top: 36%;
+        z-index: 1;
+        .presentation__menu {
+            display: flex;
+            width: 100%;
+            height: 1.81rem;
+            .title__menu--presentation {
+                font-family: var(--title_font-family);
+                font-size: 1.75rem;
+                font-style: italic;
+                font-weight: 400;
+                line-height: 2.55rem;
+                text-align: left;
+                padding: 0rem 1.56rem 0rem 0.63rem;
+            }
+            .logo__menu--presentation {
+                width: 1.38rem;
+                height: 1.31rem;
+                padding: 1.88rem 1.5rem 0rem 1.25rem;
+
+
+            }
+        
+        }
+
+        .title__card--menu {
+            width: 17.19rem;
+            height: 1.69rem;
+            font-size: 1rem;
+            font-weight: 300;
+            padding: 40px 0rem 35px 0.63rem;
+            .line__title--card {
+                width: 2.5rem;
+                text-decoration: underline var(--underline_color) 0.2rem;
+                text-underline-offset: 0.69rem;        
+    
+            }
+        }
+    
+    }
+
+
+
+    .card__menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        width: 20.63rem;
+        height: 4.5rem;
+        padding: 0.94rem 0rem 0rem 0.94rem;
+        gap: 0.31rem;
+        background-color: white;
+        border-radius: 1.25rem;
+        margin-left: 0.5rem;
+        box-shadow: 0rem 0.25rem 0.94rem 0rem #0000001A;
+
+        .title__card {
+            font-size: 1.13rem;
+            font-weight: 500;
+            margin: 0;
+        }
+        .subtitle__card {
+            display: flex;
+            justify-content: space-between;
+            .description__card {
+                font-size: 0.94rem;
+                font-weight: 300;
+                line-height: 0.94rem;
+                margin-top: 0.31rem;
+            }
+            .price__card{
+                font-size: 0.94rem;
+                font-weight: 300;
+                line-height: 0.94rem;
+                font-weight: 700;
+                padding-right: 1.25rem;
+            }
+        }
+    }
+
+    p {
+        margin-top: 0.31rem;
+    }
+
+}

@@ -12,6 +12,8 @@
 
 @media (max-width: 768px) {
     
+/*****************Header***************/
+
     .logo {
         display: flex;
         justify-content: center;
@@ -74,6 +76,7 @@
         }
     }    
 
+/*************Functionning***********/
 
     .functioning {
         width: 23.44rem;
@@ -117,6 +120,8 @@
         }
     
     }
+
+/*************Restaurant***********/
 
     .restaurant {
         display: flex;
@@ -181,6 +186,8 @@
     
     }
 
+/*************Footer***********/
+
     .footer__container {
         height: 11.63rem;
         gap: 1rem;
@@ -218,7 +225,9 @@
             margin: 0;
         }
     }
+}
 
-    
+@media (max-width: 1024px) {
+
 
 }

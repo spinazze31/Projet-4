@@ -77,10 +77,11 @@
             padding: 2.5rem 0rem 1.38rem 0.63rem;
             margin-top: 0.63rem;
             .line__title--card {
+                display: flex;
                 width: 2.5rem;
-                text-decoration: underline var(--underline_color) 0.2rem;
-                text-underline-offset: 0.69rem;        
-    
+                padding-bottom: 4px;
+                border-bottom: var(--underline_color) solid 4px;
+                
             }
         }
     
@@ -100,7 +101,7 @@
             height: 4.5rem;
             padding: 0.94rem 0rem 0rem 0.94rem;
             background-color: white;
-            border-radius: 1.25rem;
+            border-radius: var(--border);
             margin-left: 0.5rem;
             box-shadow: 0rem 0.25rem 0.94rem 0rem #0000001A;
 

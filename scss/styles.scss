@@ -12,7 +12,7 @@
 
 .main-container {
     width: 100%;
-    max-width: 768px;
+    max-width: 48rem;
     padding-left: 0;
     padding-right: 0;
     box-sizing: border-box;
@@ -106,14 +106,14 @@
             height: 4.52rem;
             border-radius: 1.25rem;
             background-color: var(--main_color); 
-            box-shadow: 0px 4px 15px 0px #00000026;
+            box-shadow: 0rem 0.25rem 0.94rem 0rem #00000026;
             border-right-width: 0.06rem;
             border-bottom-width: 0.06rem;
             text-align: left;
             position: relative;
             .functioning__btn--number {
                 position: absolute;
-                left: -12px;
+                left: -0.75rem;
             }
             .functioning__btn--logo {
                 width: 0.81rem;
@@ -157,7 +157,7 @@
             height: 15.69rem;
             border-radius: var(--border);
             background-color: white;
-            box-shadow: 0px 4px 15px 0px #0000001A;
+            box-shadow: 0rem 0.25rem 0.94rem 0rem #0000001A;
             object-fit: cover;
             position: relative;
             .restaurant__card--image {
@@ -247,7 +247,7 @@
     .main-container {
         width: 100%;
         max-width: 90rem;
-        padding: 0px 50px 0px 50px;
+        padding: 0rem 3.13rem 0rem 3.13rem;
         box-sizing: border-box;
         margin: 0 auto;
     }
@@ -279,7 +279,7 @@
         height: 14.27rem;
         padding-left: 0rem;
         .functioning__title {
-            padding-left: 9.5rem;
+            padding-left: 12%;
         }
     } 
 
@@ -295,7 +295,7 @@
         justify-content: center;
         height: 43rem;
         .restaurant__title {
-            padding: 0rem 0rem 0.5rem 9.5rem;
+            padding: 0rem 0rem 0.5rem 12%;
         }
     }
 
@@ -304,7 +304,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 50px;
+        gap: 3.13rem;
         .restaurant__card {
             width: 30.63rem;
         }
@@ -318,7 +318,7 @@
         justify-content: center;
         position: relative;
         height: 7.13rem;
-        padding-left: 200px;
+        padding-left: 12.5rem;
         .footer__logo {
             position: absolute;
             right: 1%;

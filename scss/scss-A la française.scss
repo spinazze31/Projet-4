@@ -10,8 +10,16 @@
     --border: 0.94rem;
 }
 
+.main-container {
+    width: 100%;
+    max-width: 48rem;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
-@media (max-width: 768px) {
+
     
     .logo {
         display: flex;
@@ -22,7 +30,7 @@
             display: flex;
             width: 12.31rem;
             height: 2.25rem;
-            padding-left: 2.81rem;
+            padding-left: 5rem;
         }
         .return__logo {
             display: flex;
@@ -38,7 +46,7 @@
     }
 
     .container__menu {
-        width: 96%;
+        width: 100%;
         height: 79.69rem;
         background: var(--main_color);
         border-top-left-radius: 2.5rem;
@@ -57,12 +65,12 @@
                 font-weight: 400;
                 line-height: 2.55rem;
                 text-align: left;
-                padding: 0rem 3.8rem 0rem 0.63rem;
+                padding: 0rem 3.8rem 0rem 1.5rem;
             }
             .logo__menu--presentation {
                 width: 1.38rem;
                 height: 1.31rem;
-                padding: 1.88rem 1rem 0rem 1.25rem;
+                padding: 1.88rem 1rem 0rem 2.5rem;
 
 
             }
@@ -74,7 +82,7 @@
             height: 1.69rem;
             font-size: 1rem;
             font-weight: 300;
-            padding: 2.5rem 0rem 1.38rem 0.63rem;
+            padding: 2.5rem 0rem 1.38rem 1.5rem;
             margin-top: 0.63rem;
             .line__title--card {
                 display: flex;
@@ -90,19 +98,19 @@
     .container__card{
         display: flex;
         flex-direction: column;
-        width: 349px;
-        height: 270px;
-        gap: 12px;
+        align-items: center;
+        width: 100%;
+        height: 19.6rem;
+        gap: 0.75rem;
         .card__menu {
             display: flex;
             flex-direction: column;
             justify-content: center; 
-            width: 20.63rem;
+            width: 22.5rem;
             height: 4.5rem;
             padding: 0.94rem 0rem 0rem 0.94rem;
             background-color: white;
             border-radius: var(--border);
-            margin-left: 0.5rem;
             box-shadow: 0rem 0.25rem 0.94rem 0rem #0000001A;
 
             .title__card {
@@ -156,7 +164,7 @@
     .footer__container {
         position: absolute;
         top: 193%;
-        width: 96%;
+        width: 100%;
         height: 11.63rem;
         gap: 1rem;
         background-color: var(--footer_background_color);
@@ -188,12 +196,97 @@
             color: white;
             padding-left: 1.10rem;
             font-size: 1rem;
-            font-weight: 500;
+            font-weight: 400;
             margin: 0;
         }
     }
 
     a {
         text-decoration: none;
+    }
+
+
+@media (min-width: 769px) {
+
+    .main-container {
+        width: 100%;
+        max-width: 90rem;
+        padding: 0rem 3.13rem 0rem 3.13rem;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+
+/***********Header**********/
+  
+    .logo {
+        display: flex;
+        align-items: center;
+        height: 3.94rem;
+        width: 100%;
+        .logo__size {
+            display: flex;
+            padding-left: 33rem;
+        }
+    }
+
+    .header__img {
+        height: 23.94rem;
+    }
+
+    /**********Menu section*********/
+
+    .container__menu {
+        width: 80%;
+        top: 52%;
+        left: 10%;
+        z-index: 1;
+        .presentation__menu {
+            display: flex;
+            justify-content: center;
+        }
+        .title__card--menu {
+            padding: 2.5rem 0rem 1.38rem 18.6rem;
+            .line__title--card {
+                display: flex;
+                width: 2.5rem;
+                padding-bottom: 4px;
+                border-bottom: var(--underline_color) solid 4px;
+            }
+        }
+    
+    }
+
+    .container__card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 19.6rem;
+        gap: 0.75rem;
+        .card__menu {
+            width: 39.63rem;
+            height: 4.5rem;
+        }   
+    }
+
+    .footer__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 7.13rem;
+        max-width: 90rem;
+        width: 100%;
+        top: 234%;
+        .footer__logo {
+            position: absolute;
+            right: 1%;
+            bottom: 24%;
+        }
+        .footer__link {
+            padding-top: 3.8rem;
+        }
+        .footer__container--txt {
+            padding-top: 3.8rem;
+        }
     }
 }

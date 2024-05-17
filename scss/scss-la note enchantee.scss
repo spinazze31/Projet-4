@@ -267,7 +267,7 @@
         height: 3.94rem;
         .logo__size {
             display: flex;
-            padding-left: 40%;
+            padding-left: 33rem;
         }
     }
 
@@ -330,7 +330,8 @@
         flex-direction: row;
         justify-content: center;
         height: 7.13rem;
-        width: 90rem;
+        width: 100%;
+        max-width: 90rem;
         top: 239.3%;
         .footer__logo {
             position: absolute;

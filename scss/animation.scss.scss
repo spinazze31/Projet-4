@@ -10,6 +10,13 @@
   --border: 0.94rem;
 }
 
+@mixin hover__full {
+  opacity: 1;
+  background-clip: text;
+  transform-origin: 0%;
+  animation: progress-heart 1000ms;
+}
+
 .main-container {
   width: 100%;
   max-width: 48rem;
@@ -85,7 +92,6 @@
     font-weight: 500;
   }
 }
-
 /*************Functionning***********/
 
 .functioning {
@@ -175,17 +181,40 @@ a {
       flex-direction: row;
       justify-content: space-between;
       color: black;
+      position: relative;
       .restaurant__card--title {
         display: flex;
         font-size: 1.13rem;
         font-weight: 700;
         margin: 0.63rem 0rem 0.31rem 0.75rem;
       }
-      .restaurant__card--logo {
-        width: 1.38rem;
-        height: 1.31rem;
-        padding: 0.8rem 1.8rem 0rem 0rem;
+      i {
+        position: absolute;
+        right: 5%;
+        bottom: 12%;
       }
+      .heart__full {
+        opacity: 0;
+        color: var(--underline_color);
+        &:hover {
+          @include hover__full;
+        }
+      }
+      @keyframes progress-heart {
+        0% {
+          transform: scale(0);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    }
+    .restaurant__card--logo {
+      width: 1.38rem;
+      height: 1.31rem;
+      position: absolute;
+      right: 5%;
+      bottom: 12%;
     }
     .restaurant__card--subtitle {
       size: 1.06rem;

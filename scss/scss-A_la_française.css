@@ -3,9 +3,9 @@
 }
 
 :root {
-  --main_color: #F6F6F6;
+  --main_color: #f6f6f6;
   --footer_background_color: #353535;
-  --underline_color: #99E2D0;
+  --underline_color: #99e2d0;
   --title_font-family: Shrikhand;
   --border: 0.94rem;
 }
@@ -66,10 +66,29 @@
   text-align: left;
   padding: 0rem 3.8rem 0rem 1.5rem;
 }
-.container__menu .presentation__menu .logo__menu--presentation {
-  width: 1.38rem;
-  height: 1.31rem;
-  padding: 1.88rem 1rem 0rem 2.5rem;
+.container__menu .presentation__menu i {
+  position: absolute;
+  right: 25%;
+  bottom: 96.7%;
+}
+.container__menu .presentation__menu .heart__full {
+  opacity: 0;
+  color: #9356dc;
+}
+.container__menu .presentation__menu .heart__full:hover {
+  opacity: 1;
+  -webkit-background-clip: text;
+          background-clip: text;
+  transform-origin: 0%;
+  animation: progress-heart 400ms;
+}
+@keyframes progress-heart {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 .container__menu .title__card--menu {
   width: 17.19rem;
@@ -143,8 +162,13 @@ p {
   width: 11.63rem;
   height: 3.13rem;
   border-radius: 1.56rem;
-  background: linear-gradient(to top, #9356DC -11.44%, #FF79DA 123.93%);
   color: white;
+  background: linear-gradient(to top, #9356dc -11.44%, #ff79da 123.93%);
+  transition: 400ms cubic-bezier(0, -0.27, 1, -0.16);
+}
+.container__btn .btn:hover {
+  opacity: 0.8;
+  box-shadow: 0rem 0.4rem 0.4rem 0rem black;
 }
 .container__btn .btn .btn__size {
   font-size: 1rem;
@@ -255,7 +279,7 @@ a {
     justify-content: center;
     height: 7.13rem;
     max-width: 90rem;
-    width: 100%;
+    width: calc(100% - 100px);
     top: 234%;
   }
   .footer__container .footer__logo {
@@ -269,4 +293,4 @@ a {
   .footer__container .footer__container--txt {
     padding-top: 3.8rem;
   }
-}/*# sourceMappingURL=scss-A la française.css.map */
+}/*# sourceMappingURL=scss-A_la_française.css.map */

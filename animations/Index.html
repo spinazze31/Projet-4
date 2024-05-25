@@ -16,6 +16,10 @@
       href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
     <link href="../scss/animation.scss.css" rel="stylesheet" />
   </head>
   <body class="main-container">
@@ -30,7 +34,7 @@
       <div class="searchbar">
         <img
           class="searchbar__logo"
-          src="logo/logo-localisation.png"
+          src="../logo/logo-localisation.png"
           alt="logo de localisation"
         />
         <p>Paris, Belleville</p>
@@ -50,7 +54,6 @@
       </section>
       <section class="functioning">
         <p class="functioning__title">Fonctionnement</p>
-
         <form class="functioning-container" method="get" action="">
           <button class="functioning__btn">
             <input
@@ -58,14 +61,14 @@
               type="image"
               id="image"
               alt="logo chiffre 1"
-              src="logo/logo-1.png"
+              src="../logo/logo-1.png"
             />
             <input
               class="functioning__btn--logo"
               type="image"
               id="image"
               alt="logo téléphone"
-              src="logo/logo-telephone.png"
+              src="../logo/logo-telephone.png"
             />
             <span class="functioning__btn--txt">Choisissez un restaurant</span>
           </button>
@@ -76,14 +79,14 @@
               type="image"
               id="image"
               alt="logo chiffre 2"
-              src="logo/logo-2.png"
+              src="../logo/logo-2.png"
             />
             <input
               class="functioning__btn--logo"
               type="image"
               id="image"
               alt="logo liste"
-              src="logo/logo-liste.png"
+              src="../logo/logo-liste.png"
             />
             <span class="functioning__btn--txt">Composez votre menu</span>
           </button>
@@ -94,14 +97,14 @@
               type="image"
               id="image"
               alt="logo chiffre 3"
-              src="logo/logo-3.png"
+              src="../logo/logo-3.png"
             />
             <input
               class="functioning__btn--logo"
               type="image"
               id="image"
               alt="logo magasin"
-              src="logo/logo-magasin.png"
+              src="../logo/logo-magasin.png"
             />
             <span class="functioning__btn--txt">Dégustez au restaurant</span>
           </button>
@@ -111,24 +114,27 @@
         <h1 class="restaurant__title">Restaurants</h1>
         <div class="restaurant__card--center">
           <article class="restaurant__card">
-            <a href="annexes/La palette du gout.html">
+            <a href="../annexes/La_palette_du_gout.html">
               <img
                 class="restaurant__card--image"
-                src="restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                src="../restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
                 alt="image d'une assiette remplie"
               />
               <div class="restaurant__card--container">
                 <h2 class="restaurant__card--title">La palette du goût</h2>
-                <img
-                  class="restaurant__card--logo"
-                  src="logo/coeur-vide.png"
-                  alt="image d'un coeur 'j'aime' vide"
-                />
+                <i
+                  class="fa-regular fa-heart heart__empty fa-xl"
+                  aria-hidden="true"
+                ></i>
+                <i
+                  class="fa-solid fa-heart heart__full fa-xl"
+                  aria-hidden="true"
+                ></i>
               </div>
               <p class="restaurant__card--subtitle">Ménilmontant</p>
               <img
                 class="restaurant__logo--nouveau"
-                src="logo/logo-nouveau.png"
+                src="../logo/logo-nouveau.png"
                 alt="logo écrit 'nouveu'"
               />
             </a>
@@ -145,7 +151,7 @@
                 <h2 class="restaurant__card--title">La note enchantée</h2>
                 <img
                   class="restaurant__card--logo"
-                  src="logo/coeur-plein.png"
+                  src="../logo/coeur-plein.png"
                   alt="image d'un coeur 'j'aime' plein"
                 />
               </div>
@@ -169,7 +175,7 @@
                 <h2 class="restaurant__card--title">A la française</h2>
                 <img
                   class="restaurant__card--logo"
-                  src="logo/coeur-vide.png"
+                  src="../logo/coeur-vide.png"
                   alt="image d'un coeur 'j'aime' vide"
                 />
               </div>
@@ -201,7 +207,7 @@
     <footer class="footer__container">
       <img
         class="footer__logo"
-        src="logo/ohmyfood-blanc.png"
+        src="../logo/ohmyfood-blanc.png"
         alt="logo de l'entreprise"
       />
       <a href="">

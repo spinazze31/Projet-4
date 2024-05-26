@@ -19,10 +19,10 @@
   box-sizing: border-box;
 }
 
+/***********Header**********/
 .logo {
   display: flex;
   align-items: center;
-  width: 100%;
   height: 3.94rem;
 }
 .logo .logo__size {
@@ -42,9 +42,10 @@
   position: relative;
 }
 
+/**********Menu section*********/
 .container__menu {
   width: 100%;
-  height: 79.69rem;
+  height: 88rem;
   background: var(--main_color);
   border-top-left-radius: 2.5rem;
   border-top-right-radius: 2.5rem;
@@ -64,11 +65,11 @@
   font-weight: 400;
   line-height: 2.55rem;
   text-align: left;
-  padding: 0rem 3.8rem 0rem 1.5rem;
+  padding: 0rem 1rem 0rem 1.5rem;
 }
 .container__menu .presentation__menu i {
   position: absolute;
-  right: 25%;
+  right: 10%;
   bottom: 96.7%;
 }
 .container__menu .presentation__menu .heart__full {
@@ -90,7 +91,8 @@
     transform: scale(1);
   }
 }
-.container__menu .title__card--menu {
+
+.title__card--menu {
   width: 17.19rem;
   height: 1.69rem;
   font-size: 1rem;
@@ -98,7 +100,7 @@
   padding: 2.5rem 0rem 1.38rem 1.5rem;
   margin-top: 0.63rem;
 }
-.container__menu .title__card--menu .line__title--card {
+.title__card--menu .line__title--card {
   display: flex;
   width: 2.5rem;
   padding-bottom: 4px;
@@ -119,7 +121,7 @@
   justify-content: center;
   width: 22.5rem;
   height: 4.5rem;
-  padding: 0.94rem 0rem 0rem 0.94rem;
+  padding: 0.94rem 0;
   background-color: white;
   border-radius: var(--border);
   box-shadow: 0rem 0.25rem 0.94rem 0rem rgba(0, 0, 0, 0.1019607843);
@@ -128,10 +130,12 @@
   font-size: 1.13rem;
   font-weight: 500;
   margin: 0;
+  padding: 0.6rem 0rem 0rem 1rem;
 }
 .container__card .card__menu .subtitle__card {
   display: flex;
   justify-content: space-between;
+  padding-left: 1rem;
 }
 .container__card .card__menu .subtitle__card .description__card {
   font-size: 0.94rem;
@@ -175,9 +179,11 @@ p {
   font-weight: 500;
 }
 
+/***********Footer**********/
 .footer__container {
   position: absolute;
-  top: 248%;
+  overflow: hidden;
+  top: 245%;
   width: 100%;
   height: 11.63rem;
   gap: 1rem;
@@ -232,7 +238,6 @@ a {
     display: flex;
     align-items: center;
     height: 3.94rem;
-    width: 100%;
   }
   .logo .logo__size {
     display: flex;
@@ -251,6 +256,11 @@ a {
   .container__menu .presentation__menu {
     display: flex;
     justify-content: center;
+  }
+  .container__menu .presentation__menu i {
+    position: absolute;
+    right: 30%;
+    bottom: 96.7%;
   }
   .container__menu .title__card--menu {
     padding: 2.5rem 0rem 1.38rem 18.6rem;
@@ -273,14 +283,17 @@ a {
     width: 39.63rem;
     height: 4.5rem;
   }
+  .container__btn {
+    position: absolute;
+    top: 100%;
+  }
   .footer__container {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 7.13rem;
-    max-width: 90rem;
     width: calc(100% - 100px);
-    top: 234%;
+    height: 7.13rem;
+    top: 247%;
   }
   .footer__container .footer__logo {
     position: absolute;
@@ -293,4 +306,4 @@ a {
   .footer__container .footer__container--txt {
     padding-top: 3.8rem;
   }
-}/*# sourceMappingURL=scss-A_la_française.css.map */
+}/*# sourceMappingURL=scss_Le_delice_des_sens.css.map */

@@ -102,11 +102,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 23.44rem;
+  width: 100%;
   height: 25rem;
   font-weight: 700;
   font-size: 1.5rem;
-
   .functioning__title {
     padding-left: 0.94rem;
     margin-top: 0;
@@ -169,7 +168,7 @@ a {
   align-items: center;
   gap: 1.13rem;
   .restaurant__card {
-    width: 20.16rem;
+    width: 19rem;
     height: 15.69rem;
     border-radius: var(--border);
     background-color: white;
@@ -281,10 +280,56 @@ a {
 @media (min-width: 769px) {
   .main-container {
     width: 100%;
-    max-width: 90rem;
+    max-width: 64rem;
+    min-width: 48rem;
     padding: 0rem 3.13rem 0rem 3.13rem;
     box-sizing: border-box;
     margin: 0 auto;
+  }
+
+  .functioning {
+    height: 15rem;
+    .functioning__title {
+      padding-left: 4%;
+    }
+    .functioning-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1.2rem;
+      width: 100%;
+      .functioning__btn {
+        display: flex;
+        align-items: center;
+        .functioning__btn--logo {
+          padding: 0rem 1.25rem 0rem 1.7rem;
+        }
+      }
+    }
+  }
+
+  .restaurant {
+    height: 43rem;
+    .restaurant__title {
+      padding: 3rem 0rem 0.5rem 0;
+      padding-left: 4%;
+    }
+    .restaurant__card--center {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2.2rem;
+    }
+  }
+
+  /**********Footer********/
+}
+
+@media (min-width: 1024px) {
+  .main-container {
+    width: 100%;
+    max-width: 90rem;
   }
 
   /************Header***********/
@@ -313,7 +358,7 @@ a {
     height: 14.27rem;
     padding-left: 0rem;
     .functioning__title {
-      padding-left: 12%;
+      padding-left: 14%;
     }
   }
 
@@ -329,7 +374,8 @@ a {
     justify-content: center;
     height: 43rem;
     .restaurant__title {
-      padding: 0rem 0rem 0.5rem 12%;
+      padding: 0rem 0rem 0.5rem 0rem;
+      padding-left: 14%;
     }
   }
 
@@ -340,7 +386,7 @@ a {
     justify-content: center;
     gap: 3.13rem;
     .restaurant__card {
-      width: 30.63rem;
+      width: 27rem;
     }
   }
 
@@ -349,10 +395,10 @@ a {
   .footer__container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
     position: relative;
+    padding-left: 13%;
     height: 7.13rem;
-    padding-left: 12.5rem;
     .footer__logo {
       position: absolute;
       right: 1%;

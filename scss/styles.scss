@@ -178,6 +178,7 @@ a {
     .restaurant__card--image {
       width: 100%;
       height: 70%;
+      object-fit: cover;
       border-radius: 0.94rem 0.94rem 0rem 0rem;
     }
     .restaurant__card--container {
@@ -194,7 +195,7 @@ a {
       }
       i {
         position: absolute;
-        right: 5%;
+        right: 9%;
         bottom: 12%;
       }
       .heart__full--purple {
